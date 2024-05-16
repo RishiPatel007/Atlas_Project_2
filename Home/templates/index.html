@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> {% endcomment %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+        *{
+            font-family: "Martel Sans";
+
+        }
+
+        body {
+            color: #333;
+            position: relative;
+            overflow: auto;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://th.bing.com/th/id/OIG3.CUJrdk1L2SO54O9J.OGC?pid=ImgGn');
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px); /* Adjust the blur value as needed */
+            z-index: -1;
+        }
+
+    .prop_content
+{
+    margin: 20px;
+    margin-bottom: 4px;
+    padding: 10px;
+ 
+}
+.prop_content p{
+    color: grey;
+}
+
+.prop_content_1{
+  
+    margin-top: -30px;
+    
+}
+
+.prop_content_1 a{
+    text-decoration: none;
+    color: rgb(43, 226, 73);
+}
+
+.prop_content_2 .price{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.prop_content_2 sub{
+    color: blueviolet;
+}
+
+.prop_content_2 form{
+    margin-top: 10px;
+}
+
+.content_header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+       
+}
+
+.prop_content_2{
+    margin-top: 40px;
+}
+
+.prop_pics{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    gap:16px;
+
+}
+
+.prop_pics > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.main_img{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+table{
+   
+    margin: 20px;
+}
+
+table td .title{
+    color: grey;
+}
+nav {
+    background-color: #2c3e50; /* Dark blue background color for navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: white; /* Light gray text color for the brand */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Light gray text color for navigation links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db; /* Light blue text color on hover */
+}
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="/media/Blue_Illustrative_Luxury_Real_Estate_Logo__1_-removebg-preview.png" height="50px" width="70px" style="position: absolute;top:0;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="container navbar-nav align-items-center justify-content-around w-75">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://127.0.0.1:8000/" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="box_1 container-fluid p-2" style="background-color:rgba(255, 255, 255, 0.927);width: 90%;">
+        <div class="header">
+            <div class="content_header">
+                <div class="prop_content">
+                    <h2>{{p.name}}</h2>
+                    <p>{{p.bedrooms}} BHK Flats</p>
+                </div>
+
+                <div class="prop_content_1">
+                    <a href="#">
+                        <!-- <i class="fa-share-nodes"></i> -->
+                        <span class="material-symbols-outlined">
+                            share
+                            </span>
+                        <!-- <i class="fa-solid fa-share-nodes"></i> -->
+                    </a>
+
+                    <a href="#">
+                        <!-- <i class="fa fa-heart"></i> -->
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                    </a>
+                </div>
+             </div>
+
+        <div class="prop_content_2">
+            <p class="price">{{p.price}}.</p> 
+            <sub>EMI starts at ₹31.77K</sub>
+            <div>₹{{p.price_per_sqft}}/sq.ft</div>
+            <form class="d-flex">
+          <button class="btn text-white" style="background-color: rgb(140, 18, 254)!important;" type="button">Contact Seller</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="prop_pics">
+        <img src="{{p.img1.url}}" alt="" class="main_img">
+        <img src="{{p.img2.url}}" alt="" class="main_img_small">
+        <img src="{{p.img3.url}}" alt="" class="main_img_small">
+        <img src="{{p.img4.url}}" alt="" class="main_img_small">
+        <img src="{{p.img5.url}}" alt="" class="main_img_small">
+
+
+    </div>
+
+    <!-- <div class="overview"> -->
+        <table border="1" rules="groups" width="80%" cellpadding="20">
+            <thead>
+                <tr>
+                    <!-- <th>Month</th> -->
+                    <th colspan="2" align="left"><h2 style="color:rgb(140, 18, 254) ;">Property Overview</h2></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="title">Brokerage</div>
+                        <div style="color: rgb(140, 18, 254);">  ₹{{p.brokerage}} </div>
+                    </td>
+                    <td>
+                        <div class="title">Price</div>
+                        <div style="color: rgb(140, 18, 254);">  ₹{{p.price}}.</div>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="title">Bedrooms</div>
+                        <div style="color: rgb(140, 18, 254);">{{p.bedrooms}}</div>
+                    </td>
+                    <td>
+                        <div class="title">Bathrooms</div>
+                        <div style="color: rgb(140, 18, 254);">{{p.bathrooms}}</div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="title">Parking</div>
+                        <div style="color: rgb(140, 18, 254);"> {{p.parking}} Open Parking </div>
+                    </td>
+
+                    <td>
+                        <div class="title"z>Balcony</div>
+                        <div style="color: rgb(140, 18, 254);">  {{p.balcony}}</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="title"z>Added</div>
+                        <div style="color: rgb(140, 18, 254);"> {{p.added_status}}</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <h3 style="color: rgb(140, 18, 254);;">About this property</h3>
+                       <div class="title" style="color: black;">Looking for a good {{p.bedrooms}} BHK Flat in {{p.address}}? This property is in one of Ahmedabad's most popular locations. Maintenance charges of this property is Rs 2000. This Flat is available for Rs {{p.price}}. This modern unit has a built-up area of 760 square feet. There are {{p.bedrooms}} bedrooms and {{p.bathrooms}} bathroom. Lift is available in this Flat. This is a gated community. Cctv facility is provided to ensure safety. The brokerage amount to be paid is Rs {{p.brokerage}}</div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <form class="d-flex">
+          <button class="btn text-white" style="background-color: rgb(140, 18, 254)!important; margin: 5px;" type="button">Share</button>
+          
+          <button class="btn text-white" style="background-color: rgb(140, 18, 254)!important; margin: 5px;" type="button">Save</button>
+        </form>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+
+    <!-- </div> -->
+    </div>
+</body>
+</html>

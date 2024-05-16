@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property List</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <style>
+.total_property{
+    margin:44px 0;
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.total_property span{
+    color:blueviolet;
+    font-weight: 600;
+    
+}
+.property img{
+    width: 100%;
+}
+
+
+.property_container{
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.property_item{
+    border: 1px solid #cbe7cf;
+    border-radius: 24px;  
+    margin-bottom: 20px; 
+    transition: all .2s var(--transition);
+}
+
+.property_banner{
+    padding:0 0 12px;
+}
+
+.property_banner,
+.property_images
+{
+    position: relative;
+}
+
+.property_images
+{
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.property a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.property_content{
+    padding: 0 18px 18px;
+    position: relative;
+}
+
+.property_category{
+    color: #90908e;
+    font-size: 17px;
+
+}
+
+
+.property_title{
+    font-size: 25px;
+    margin-block: 4px 8px;
+    font-family: var(--second-font);
+    color:blueviolet;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: space-around;
+
+}
+
+
+.property_item:hover{
+    box-shadow: 0 0 10px hsla(0 , 0% , 0% , 0.2);
+}
+.property_item:hover .property_img.hover , 
+.property_item:hover {
+    opacity:1;
+}
+
+    </style>
+</head>
+<body>
+    <section class="property section container">
+        <p class="total_property">We found <span>9</span> properties for you!</p>
+        <div class="property_container">
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+
+          <div class="property_item">
+            <div class="property_banner">
+              <a href="details.html" class="property_images">
+                <img src="img-1.jpg" alt="" class="property_img default">
+              </a>
+            </div>
+  
+            <div class="property_content">
+              <span class="property_category">₹80 Lac</span>
+              <a href="details.html">
+                <h2 class="property_title">Dharti Elegance</h2>
+              </a>
+  <span class="property_category">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, deleniti quam?</span>
+              <hr>
+  
+            <div class="property_detail flex">
+                <div class="p_1">
+                    <span><i class="fa-solid fa-bed"></i></span>
+                    <span>2 BHK</span>
+                
+                </div>
+
+                <div class="p_2">
+                    <i class="fa-solid fa-bath"></i>  2 bath
+                </div>
+
+                <div class="p_3">
+                    <i class="fa-solid fa-ruler"></i> 1000/sq.ft
+                    </div> 
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+</body>
+</html>
